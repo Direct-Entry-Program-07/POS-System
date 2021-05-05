@@ -34,7 +34,6 @@ public class OrderListFormController {
         colTotalCost.setCellValueFactory(new PropertyValueFactory<>("TotalCost"));
 
         loadAllOrders();
-
         //---------------------
 
         tblOrderList.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
@@ -68,8 +67,6 @@ public class OrderListFormController {
         }
         tblOrderList.setItems(orderObList);
     }
-
-
 
     public void backToHome(ActionEvent actionEvent) throws IOException {
 
